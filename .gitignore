@@ -1,6 +1,6 @@
 # vs
-/vs
-/Debug
+.vs/
+Debug/
 
 # Prerequisites
 *.d

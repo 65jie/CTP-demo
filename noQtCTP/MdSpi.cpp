@@ -5,26 +5,7 @@
 #include <string>
 using namespace std;
 
-/// 会员代码
-TThostFtdcBrokerIDType g_chBrokerID;
-/// 交易用户代码
-TThostFtdcUserIDType g_chUserID;
-/// 交易用户密码
-TThostFtdcPasswordType g_chPassword;
-/// 交易所代码
-TThostFtdcExchangeIDType g_chExchangeID;
-///合约代码
-TThostFtdcInstrumentIDType	g_chInstrumentID;
-///投资者代码
-TThostFtdcInvestorIDType g_chInvestorID;
-///用户端产品信息
-TThostFtdcProductInfoType	g_chUserProductInfo;
-///认证码
-TThostFtdcAuthCodeType	g_chAuthCode;
-///App代码
-TThostFtdcAppIDType	g_chAppID;
-
-const string BROKER_ID = "8060";
+const string BROKER_ID = "9999";
 const string NULL_STR = "";
 
 MdSpi::MdSpi(CThostFtdcMdApi *mdapi){
@@ -49,7 +30,7 @@ void MdSpi::OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin, CThostFtd
 		cout << "请求的登陆成功," << "请求ID为" << loginRequestID << endl;
 		/***************************************************************/
 		cout << "尝试订阅行情" << endl;
-		char *instrumentID[] = { "cu1409" };	//订阅一个合约所以数量为1
+		char *instrumentID[] = { "au2005" };	//订阅一个合约所以数量为1
 		mdapi->SubscribeMarketData(instrumentID, 1);
 	}
 }

@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
 	////注册事件处理对象
 	//mdapi->RegisterSpi(mdspi);
 	////和前置机连接
-	//mdapi->RegisterFront("tcp://mn101.ctp.gtjafutures.com:41205");
+	//mdapi->RegisterFront("tcp://180.168.146.187:10131");	//模拟 行情
 	//std::cout << "1\n";
 	//mdapi->Init();
 	//std::cout << "2\n";
@@ -36,7 +36,6 @@ int main(int argc, char *argv[]){
 	//注册前置机
 	//tdapi->RegisterFront("tcp://180.169.75.19:41205");	//实盘270338
 	tdapi->RegisterFront("tcp://180.168.146.187:10130");	//模拟 交易
-	// tdapi->RegisterFront("tcp://180.168.146.187:10131");	//模拟 行情
 	std::cout << "1\n";
 	//和前置机连接
 	tdapi->Init();

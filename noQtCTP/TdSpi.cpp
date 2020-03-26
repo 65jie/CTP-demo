@@ -15,7 +15,7 @@ string tradingDate;
 //Ä£ÄâÕËºÅ
 const string USER_ID = "161463";
 const string InvestorID = "161463";
-const string PASS = "456123";
+const string PASS = "94565jie";
 const string BROKER = "9999";
 const string AppID = "simnow_client_test";
 const string AuthCode = "0000000000000000";
